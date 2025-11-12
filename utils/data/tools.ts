@@ -1,4 +1,4 @@
-import { ToolsItem } from "../types/toolsItem";
+import { ToolsItem } from "../types/data/toolsItem";
 
 export const ToolsData: ToolsItem[] = [
     {url: '/images/tools/js.png'},

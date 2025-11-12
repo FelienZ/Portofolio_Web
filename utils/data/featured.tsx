@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { FeaturedItem } from "../types/featuredItem";
+import { FeaturedItem } from "../types/data/featuredItem";
 import Image from "next/image";
 
 export const featuredData:FeaturedItem[] = [

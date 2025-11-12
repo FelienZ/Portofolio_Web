@@ -1,5 +1,5 @@
 import { Cpu, GraduationCap, PanelsTopLeft, ShieldCheck } from "lucide-react";
-import { StatsItem } from "../types/statsItem";
+import { StatsItem } from "../types/data/statsItem";
 import { AchievementData } from "./achievement";
 import { ToolsData } from "./tools";
 

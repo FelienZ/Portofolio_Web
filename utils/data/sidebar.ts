@@ -1,4 +1,4 @@
-import { SidebarItem } from "@/utils/types/sidebarItem"
+import { SidebarItem } from "@/utils/types/data/sidebarItem"
 import {Contact, Home, PanelsTopLeft, Settings, User} from "lucide-react"
 // Menu items.
 export const groupItems: SidebarItem[] = [
