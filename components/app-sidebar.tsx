@@ -14,6 +14,7 @@ import {
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@radix-ui/react-dropdown-menu"
 import { dropdownItems, groupItems } from "@/utils/data/sidebar"
 import { usePathname } from "next/navigation"
+import Link from "next/link"
 
 export function AppSidebar() {
   const location = usePathname()
@@ -27,10 +28,10 @@ export function AppSidebar() {
                 {groupItems.map((item) => (
                 <SidebarMenuItem key={item.title} className="pb-2">
                   <SidebarMenuButton className={`${item.url === location ? 'bg-neutral-900/50 text-white hover:bg-neutral-400' : ''}`} asChild>
-                    <a href={item.url}>
+                    <Link href={item.url}>
                       <item.icon />
                       <span>{item.title}</span>
-                    </a>
+                    </Link>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               ))}
