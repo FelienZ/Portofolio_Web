@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { loadingProps } from "./types/props/isLoading";
-import { ContributionInterface } from "./types/data/contribution";
+import { Activity } from "@/components/kibo-ui/contribution-graph";
 
 const username = 'felienz';
 
 export default function GithubData({setIsLoading}: Pick<loadingProps, 'setIsLoading'>){
-  const [contribution, setContribution] = useState<ContributionInterface[]>([])
+  const [contribution, setContribution] = useState<Activity[]>([])
   useEffect(()=>{
     async function getData(u:string) {
       setIsLoading(true)
