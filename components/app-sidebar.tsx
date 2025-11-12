@@ -1,5 +1,5 @@
+'use client'
 import { ChevronUp, User2 } from "lucide-react"
-
 import {
   Sidebar,
   SidebarContent,
@@ -12,9 +12,11 @@ import {
   SidebarMenuItem,
 } from "@/components/ui/sidebar"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@radix-ui/react-dropdown-menu"
-import { dropdownItems, groupItems } from "@/utils/sidebar"
+import { dropdownItems, groupItems } from "@/utils/data/sidebar"
+import { usePathname } from "next/navigation"
 
 export function AppSidebar() {
+  const location = usePathname()
   return (
     <Sidebar>
       <SidebarContent>
@@ -24,7 +26,7 @@ export function AppSidebar() {
             <SidebarMenu className="mt-5 gap-4 divide-y">
                 {groupItems.map((item) => (
                 <SidebarMenuItem key={item.title} className="pb-2">
-                  <SidebarMenuButton asChild>
+                  <SidebarMenuButton className={`${item.url === location ? 'bg-neutral-900/50 text-white hover:bg-neutral-400' : ''}`} asChild>
                     <a href={item.url}>
                       <item.icon />
                       <span>{item.title}</span>

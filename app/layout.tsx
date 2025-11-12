@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { Bebas_Neue, Geist, Geist_Mono, Inter, Outfit, Poppins } from "next/font/google";
+import { Bebas_Neue, Geist, Geist_Mono, Outfit, Poppins } from "next/font/google";
 import "./globals.css";
+import "./style.css";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/app-sidebar";
 
@@ -40,7 +41,7 @@ export default function RootLayout({
           <AppSidebar />
           <main className="overflow-x-scroll">
             <SidebarTrigger />
-            <div className="min-h-screen w-screen px-10">
+            <div className="min-h-screen w-screen px-10 pb-5">
               {children}
             </div>
           </main>

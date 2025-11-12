@@ -1,7 +1,9 @@
+import Githubsection from "./Github";
+
 export default function Projectpage(){
     return(
-        <section>
-            <p>Ini halaman project</p>
+        <section className="min-h-screen flex flex-col gap-10">
+            <Githubsection/>
         </section>
     )
 }
