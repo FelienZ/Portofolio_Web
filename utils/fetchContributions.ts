@@ -21,6 +21,6 @@ export default function GithubData({setIsLoading}: Pick<loadingProps, 'setIsLoad
       }
     }
     getData(username)
-  }, [])
+  }, [setIsLoading])
   return contribution
 }
