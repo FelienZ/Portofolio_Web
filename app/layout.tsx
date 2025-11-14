@@ -5,6 +5,7 @@ import "./style.css";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/app-sidebar";
 import ThemeProvider from "@/utils/themeProvider";
+import { Toaster } from "@/components/ui/sonner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -43,10 +44,11 @@ export default function RootLayout({
           <AppSidebar />
           <main className="overflow-x-scroll">
             <SidebarTrigger />
-            <div className="min-h-screen w-screen sm:mx-5 mb-5">
+            <div className="min-h-screen w-screen sm:mx-5 my-5">
               {children}
             </div>
           </main>
+          <Toaster toastOptions={{className: 'bg-card text-card-foreground'}} position="bottom-left"/>
         </SidebarProvider>
       </ThemeProvider>
       </body>
