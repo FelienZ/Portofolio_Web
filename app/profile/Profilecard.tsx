@@ -4,6 +4,7 @@ import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip
 import handleNavigateExternal from "@/utils/navigateExternal";
 import { CodeXml, Github, GraduationCap, Instagram, Laptop, Linkedin, Send, Settings } from "lucide-react";
 import Image from "next/image";
+import { toast } from "sonner";
 
 export default function ProfileCard(){
     return(
@@ -13,7 +14,7 @@ export default function ProfileCard(){
                 </div>
                 <div className="lower md:px-10 rounded-b-sm">
                     <div className="flex max-sm:flex-col items-center gap-4 h-full">
-                        <Image sizes="100%" src="/images/takina3.jpg" width={200} height={200} className="object-cover relative max-sm:absolute sm:left-6 bottom-30 max-sm:bottom-45 p-3 bg-card text-card-foreground transition-colors ease-in-out duration-200 rounded-full" alt=""/>
+                        <Image onClick={()=>toast.warning("Ini My Gweh Woi")} sizes="100%" src="/images/takina3.jpg" width={200} height={200} className="object-cover relative max-sm:absolute sm:left-6 bottom-30 max-sm:bottom-45 p-3 bg-card text-card-foreground transition-colors ease-in-out duration-200 rounded-full" alt=""/>
                         <div className="flex flex-col h-full justify-evenly max-sm:pt-20 p-6 gap-4">
                             <div className="flex flex-col gap-2">
                                 <p className="font-bold md:text-xl max-md:text-center tracking-[3px]">M. Rajab Fadhly Hartawibawa</p>
@@ -53,7 +54,7 @@ export default function ProfileCard(){
                                 </div>
                                 <Tooltip>
                                     <TooltipTrigger asChild>
-                                        <Button variant={"outline"} className="w-fit hover:bg-neutral-900 hover:text-white border-black"><Send/> Message</Button>
+                                        <Button onClick={()=>handleNavigateExternal('https://wa.me/6281229564138')} variant={"outline"} className="w-fit hover:bg-neutral-900 hover:text-white border-black"><Send/> Message</Button>
                                     </TooltipTrigger>
                                     <TooltipContent side="bottom">
                                         <p>Mail me!</p>
