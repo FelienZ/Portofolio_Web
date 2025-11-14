@@ -1,9 +1,12 @@
 'use client'
 import {
+  Activity,
   ContributionGraph,
   ContributionGraphBlock,
   ContributionGraphCalendar,
   ContributionGraphFooter,
+  ContributionGraphLegend,
+  ContributionGraphTotalCount,
 } from "@/components/kibo-ui/contribution-graph";
 import {
   Tooltip,
@@ -16,10 +19,15 @@ import GithubData from "@/utils/fetchContributions";
 import { useState } from "react";
 import { Spinner } from "./ui/spinner";
 import { Button } from "./ui/button";
+import { Badge } from "./ui/badge";
 
 const Githubcontributions = () => {
-const [isLoading, setIsLoading] = useState(false)
+const [isLoading, setIsLoading] = useState<boolean>(false)
 const contribution = GithubData({setIsLoading})
+/* function filterCurrentYear(data: Activity[]): Activity[] {
+  const thisYear = new Date().getFullYear().toString(); // mis. '2025'
+  return data.filter(item => item.date.startsWith(thisYear));
+} */
   return (
   isLoading ? (
     <Button variant="outline" disabled className="w-fit place-self-center">
@@ -28,8 +36,8 @@ const contribution = GithubData({setIsLoading})
     </Button>
   ) : (
     <TooltipProvider>
-    <ContributionGraph data={contribution}>
-      <ContributionGraphCalendar>
+    <ContributionGraph data={/* filterCurrentYear */(contribution)} /* blockMargin={6} blockSize={16} fontSize={14} */>
+      <ContributionGraphCalendar className="py-3">
         {({ activity, dayIndex, weekIndex }) => (
           <Tooltip>
             <TooltipTrigger asChild>
@@ -55,7 +63,18 @@ const contribution = GithubData({setIsLoading})
           </Tooltip>
         )}
       </ContributionGraphCalendar>
-      <ContributionGraphFooter />
+      <ContributionGraphFooter>
+         <ContributionGraphTotalCount>
+        {({ totalCount, year }) => (
+          <div className="flex items-center justify-end w-full gap-2">
+            <span className="text-muted-foreground text-sm">Year {year}:</span>
+            <Badge variant="secondary">
+              {totalCount.toLocaleString()} contributions
+            </Badge>
+          </div>
+        )}
+      </ContributionGraphTotalCount>
+      </ContributionGraphFooter>
     </ContributionGraph>
   </TooltipProvider>)
   )
