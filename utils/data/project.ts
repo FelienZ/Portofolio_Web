@@ -8,7 +8,7 @@ export const projectData: ProjectInterface[] = [
         visibility: 'private'
     },
     {
-        url: 'http://localhost:8000',
+        url: 'https://github.com/FelienZ/Kuchi_Hotel',
         title: 'Hotel Booking Web',
         createdAt: 'Sep 25, 2025',
         visibility: 'public'
@@ -26,13 +26,19 @@ export const projectData: ProjectInterface[] = [
         visibility: 'public'
     },
     {
-        url: 'http://localhost:3000',
+        url: 'https://github.com/FelienZ/LokaStore',
         title: 'Lokastore',
         createdAt: 'Jul 21, 2025',
         visibility: 'public'
     },
     {
-        url: 'http://localhost:3000',
+        url: 'https://github.com/FelienZ/OpenMusic_API',
+        title: 'Open Music API',
+        createdAt: 'Jul 15, 2025',
+        visibility: 'public'
+    },
+    {
+        url: 'https://github.com/FelienZ/notes-app-back-end',
         title: 'Notes App API',
         createdAt: 'Jun 24, 2025',
         visibility: 'public'

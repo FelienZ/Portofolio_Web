@@ -1,5 +1,5 @@
 import { SidebarItem } from "@/utils/types/data/sidebarItem"
-import {Contact, Home, PanelsTopLeft, SunMedium, User} from "lucide-react"
+import { Home, PanelsTopLeft, SunMedium, User} from "lucide-react"
 // Menu items.
 export const groupItems: SidebarItem[] = [
   {
@@ -17,16 +17,11 @@ export const groupItems: SidebarItem[] = [
     url: "/projects",
     icon: PanelsTopLeft,
   },
-  {
-    title: "Contact Me",
-    url: "/contact",
-    icon: Contact,
-  },
 ]
 
 export const dropdownItems: Omit<SidebarItem, 'url'>[] = [
     {
-        title: 'My Account',
+        title: 'Theme',
         icon: SunMedium,
     },
 ]
