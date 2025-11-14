@@ -4,6 +4,7 @@ import "./globals.css";
 import "./style.css";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/app-sidebar";
+import ThemeProvider from "@/utils/themeProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,15 +38,17 @@ export default function RootLayout({
       <body
         className={`${outfit.className} antialiased overflow-x-hidden`}
       >
+      <ThemeProvider>
         <SidebarProvider>
           <AppSidebar />
           <main className="overflow-x-scroll">
             <SidebarTrigger />
-            <div className="min-h-screen w-screen px-10 pb-5">
+            <div className="min-h-screen w-screen sm:mx-5 mb-5">
               {children}
             </div>
           </main>
         </SidebarProvider>
+      </ThemeProvider>
       </body>
     </html>
   );
