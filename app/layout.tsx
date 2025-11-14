@@ -48,7 +48,7 @@ export default function RootLayout({
               {children}
             </div>
           </main>
-          <Toaster toastOptions={{className: 'bg-card text-card-foreground'}} position="bottom-left"/>
+          <Toaster toastOptions={{className: 'bg-card text-card-foreground'}} position="top-center"/>
         </SidebarProvider>
       </ThemeProvider>
       </body>

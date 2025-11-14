@@ -14,7 +14,13 @@ export default function AchievementsCard(){
             <p className="font-bold flex items-center gap-3"><Trophy/> My Achievements</p>
             <Reorder.Group axis="y" values={items} onReorder={setItem} className="flex flex-col gap-5 h-[59vh] overflow-y-scroll p-3">
                 {items.map((i)=> (
-                    <Reorder.Item value={i} key={i.title} className="grid grid-cols-[auto_1fr_auto] max-sm:min-h-40 max-sm:overflow-y-auto max-sm:max-h-40 hover:cursor-grab bg-card text-card-foreground transition-colors ease-in-out duration-200 place-items-center rounded-md border inset-shadow-sm gap-4 p-3">
+                    <Reorder.Item value={i} key={i.title} className="grid grid-cols-[auto_1fr_auto] max-sm:min-h-40 max-sm:overflow-y-auto [&::-webkit-scrollbar]:w-1.5
+                    [&::-webkit-scrollbar-track]:rounded-full
+                    [&::-webkit-scrollbar-track]:bg-gray-100
+                    [&::-webkit-scrollbar-thumb]:rounded-full
+                    [&::-webkit-scrollbar-thumb]:bg-gray-300
+                    dark:[&::-webkit-scrollbar-track]:bg-neutral-700
+                    dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500 max-sm:max-h-40 hover:cursor-grab bg-card text-card-foreground transition-colors ease-in-out duration-200 place-items-center rounded-md border inset-shadow-sm gap-4 p-3">
                         <div className="relative size-15 rounded-md">
                             <Image sizes="100%" src={i.imageUrl} fill alt="" className="p-1 rounded-md"/>
                         </div>

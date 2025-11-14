@@ -37,7 +37,13 @@ const contribution = GithubData({setIsLoading})
   ) : (
     <TooltipProvider>
     <ContributionGraph data={/* filterCurrentYear */(contribution)} /* blockMargin={6} blockSize={16} fontSize={14} */>
-      <ContributionGraphCalendar className="py-3">
+      <ContributionGraphCalendar className="py-3 [&::-webkit-scrollbar]:h-1.5
+      [&::-webkit-scrollbar-track]:rounded-full
+      [&::-webkit-scrollbar-track]:bg-gray-100
+      [&::-webkit-scrollbar-thumb]:rounded-full
+      [&::-webkit-scrollbar-thumb]:bg-gray-300
+      dark:[&::-webkit-scrollbar-track]:bg-neutral-700
+      dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500">
         {({ activity, dayIndex, weekIndex }) => (
           <Tooltip>
             <TooltipTrigger asChild>
