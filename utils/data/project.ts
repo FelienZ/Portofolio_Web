@@ -14,7 +14,7 @@ export const projectData: ProjectInterface[] = [
         visibility: 'public'
     },
     {
-        url: 'http://localhost:3000',
+        url: 'https://felienz.my.id',
         title: 'Portofolio Web',
         createdAt: 'Oct 23, 2025',
         visibility: 'private'

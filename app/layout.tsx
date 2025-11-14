@@ -44,7 +44,7 @@ export default function RootLayout({
           <AppSidebar />
           <main className="overflow-x-scroll">
             <SidebarTrigger />
-            <div className="min-h-screen w-screen sm:mx-5 my-5">
+            <div className="min-h-screen w-screen mx-2.5 sm:mx-5 my-5">
               {children}
             </div>
           </main>
