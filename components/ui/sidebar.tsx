@@ -266,7 +266,7 @@ function SidebarTrigger({
       data-slot="sidebar-trigger"
       variant="secondary"
       size="icon"
-      className={cn("size-10 absolute z-40 bg-card drop-shadow-sm border top-20 rounded-l-none", className)}
+      className={cn("size-10 fixed z-40 bg-card drop-shadow-sm border top-20 rounded-l-none", className)}
       onClick={(event) => {
         onClick?.(event)
         toggleSidebar()

@@ -20,7 +20,7 @@ export default function AchievementsCard(){
                     [&::-webkit-scrollbar-thumb]:rounded-full
                     [&::-webkit-scrollbar-thumb]:bg-gray-300
                     dark:[&::-webkit-scrollbar-track]:bg-neutral-700
-                    dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500 max-sm:max-h-40 hover:cursor-grab bg-card text-card-foreground transition-colors ease-in-out duration-200 place-items-center rounded-md border inset-shadow-sm gap-4 p-3">
+                    dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500 max-sm:max-h-40 hover:cursor-grab bg-card hover:bg-neutral-700 hover:text-white text-card-foreground transition-colors ease-in-out duration-200 place-items-center rounded-md border inset-shadow-sm gap-4 p-3">
                         <div className="relative size-15 rounded-md">
                             <Image sizes="100%" src={i.imageUrl} fill alt="" className="p-1 rounded-md"/>
                         </div>
@@ -33,7 +33,7 @@ export default function AchievementsCard(){
                         </div>
                         <Tooltip>
                             <TooltipTrigger asChild>
-                                <Button onClick={()=>handleNavigateExternal(i.url)}>View <SquareArrowOutUpRight/></Button>
+                                <Button onClick={()=>handleNavigateExternal(i.url)} className="hover:cursor-pointer">View <SquareArrowOutUpRight/></Button>
                             </TooltipTrigger>
                             <TooltipContent side="bottom">
                                 <p>View Credentials</p>

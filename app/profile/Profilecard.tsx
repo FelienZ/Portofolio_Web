@@ -14,7 +14,7 @@ export default function ProfileCard(){
                 </div>
                 <div className="lower md:px-10 rounded-b-sm">
                     <div className="flex max-sm:flex-col items-center gap-4 h-full">
-                        <Image onClick={()=>toast.warning("Ini My Gweh Woi")} sizes="100%" src="/images/takina3.jpg" width={200} height={200} className="object-cover relative max-sm:absolute sm:left-6 bottom-30 max-sm:bottom-45 p-3 bg-card text-card-foreground transition-colors ease-in-out duration-200 rounded-full" alt=""/>
+                        <Image onClick={()=>toast.warning("Ini My Gweh Woi")} sizes="100%" src="/images/takina3.jpg" width={200} height={200} className="object-cover hover:cursor-pointer relative max-sm:absolute sm:left-6 bottom-30 max-sm:bottom-45 p-3 bg-card text-card-foreground transition-colors ease-in-out duration-200 rounded-full" alt=""/>
                         <div className="flex flex-col h-full justify-evenly max-sm:pt-20 p-6 gap-4">
                             <div className="flex flex-col gap-2">
                                 <p className="font-bold md:text-xl max-md:text-center tracking-[3px]">M. Rajab Fadhly Hartawibawa</p>
@@ -29,7 +29,7 @@ export default function ProfileCard(){
                                 <div className="flex gap-6 items-center">
                                     <Tooltip>
                                         <TooltipTrigger asChild>
-                                            <Button onClick={()=>handleNavigateExternal('https://www.instagram.com/rajabfadh/')} variant={"outline"} className="size-8 bg-white transition-colors duration-200 hover:border-none hover:bg-linear-to-bl hover:text-white hover:from-[#f9ce34] hover:via-[#ee2a7b] hover:to-[#6228d7] rounded-md border-black"><Instagram/></Button>
+                                            <Button onClick={()=>handleNavigateExternal('https://www.instagram.com/rajabfadh/')} variant={"outline"} className="size-8 hover:cursor-pointer bg-white transition-colors duration-200 hover:border-none hover:bg-linear-to-bl hover:text-white hover:from-[#f9ce34] hover:via-[#ee2a7b] hover:to-[#6228d7] rounded-md border-black"><Instagram/></Button>
                                         </TooltipTrigger>
                                         <TooltipContent>
                                             <p>My Instagram</p>
@@ -37,7 +37,7 @@ export default function ProfileCard(){
                                     </Tooltip>
                                     <Tooltip>
                                         <TooltipTrigger asChild>
-                                            <Button onClick={()=>handleNavigateExternal('https://github.com/FelienZ')} variant={"outline"} className="size-8 bg-white transition-colors duration-200 hover:border-none rounded-md hover:bg-neutral-900 hover:text-white border-black"><Github/></Button>
+                                            <Button onClick={()=>handleNavigateExternal('https://github.com/FelienZ')} variant={"outline"} className="size-8 hover:cursor-pointer bg-white transition-colors duration-200 hover:border-none rounded-md hover:bg-neutral-900 hover:text-white border-black"><Github/></Button>
                                         </TooltipTrigger>
                                         <TooltipContent>
                                             <p>My Github</p>
@@ -45,7 +45,7 @@ export default function ProfileCard(){
                                     </Tooltip>
                                     <Tooltip>
                                         <TooltipTrigger asChild>
-                                            <Button onClick={()=>handleNavigateExternal('https://www.linkedin.com/in/muhammad-rajab-fadhly/')} variant={"outline"} className="size-8 bg-white transition-colors duration-200 hover:border-none rounded-md hover:bg-blue-800 hover:text-white border-black"><Linkedin/></Button>
+                                            <Button onClick={()=>handleNavigateExternal('https://www.linkedin.com/in/muhammad-rajab-fadhly/')} variant={"outline"} className="size-8 hover:cursor-pointer bg-white transition-colors duration-200 hover:border-none rounded-md dark:hover:bg-blue-800 hover:bg-blue-800 hover:text-white border-black"><Linkedin/></Button>
                                         </TooltipTrigger>
                                         <TooltipContent>
                                             <p>My LinkedIn</p>
@@ -54,7 +54,7 @@ export default function ProfileCard(){
                                 </div>
                                 <Tooltip>
                                     <TooltipTrigger asChild>
-                                        <Button onClick={()=>handleNavigateExternal('https://wa.me/6281229564138')} variant={"outline"} className="w-fit hover:bg-neutral-900 hover:text-white border-black"><Send/> Message</Button>
+                                        <Button onClick={()=>handleNavigateExternal('https://wa.me/6281229564138')} variant={"outline"} className="w-fit hover:cursor-pointer hover:bg-neutral-900 hover:text-white border-black"><Send/> Message</Button>
                                     </TooltipTrigger>
                                     <TooltipContent side="bottom">
                                         <p>Mail me!</p>

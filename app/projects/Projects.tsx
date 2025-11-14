@@ -9,7 +9,7 @@ export default function MyProjects(){
             <p className="font-bold flex items-center gap-2"><FolderOpen/> My Projects</p>
             <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-4 p-3 inset-shadow-sm rounded-md max-md:h-[30vh] overflow-y-auto">
                 {projectData.map((i, idx) => (
-                    <div key={idx} onClick={()=>handleNavigateExternal(i.url)} className="flex gap-3 bg-card text-card-foreground ease-in-out hover:cursor-pointer hover:bg-neutral-700 hover:text-white transition-colors duration-200 drop-shadow-sm rounded-md p-3 items-center">
+                    <div key={idx} onClick={()=>handleNavigateExternal(i.url)} className="flex gap-3 border bg-card text-card-foreground ease-in-out hover:cursor-pointer hover:bg-neutral-700 hover:text-white transition-colors duration-200 drop-shadow-sm rounded-md p-3 items-center">
                         <Book/>
                         <div className="flex flex-col gap-2">
                             <div className="flex items-center gap-2">

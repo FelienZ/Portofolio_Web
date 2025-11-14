@@ -21,7 +21,7 @@ export default function Herosection(){
                         <Button className="bg-neutral-400 border size-8 hover:bg-neutral-800 border-neutral-600"><CircleArrowOutUpRight/></Button>
                     </div>
                 </div>
-                <div className="image2 grid lg:grid-rows-2 max-lg:grid-cols-2 gap-2">
+                <div className="image2 grid lg:grid-rows-2 max-lg:grid-cols-2 max-lg:h-[20vh] gap-2">
                     <div onClick={()=>toast.info("Halaman Belum Tersedia")} className="relative drop-shadow-sm flex w-full items-center justify-center" onMouseEnter={()=>setToggleMusic(true)} onMouseLeave={()=>setToggleMusic(false)}>
                         <Image sizes="100%" src="/images/Musics.jpg" loading="eager" className="rounded-sm opacity-70" fill alt=""/>
                         <div className={`flex ${toggleMusic ? 'opacity-100' : 'opacity-0 pointer-events-none'} absolute inset-0 backdrop-blur-lg size-full bg-neutral-900/30 rounded-sm text-white justify-center items-center flex-col gap-3 transition-all duration-300 ease-in-out z-30`}>
