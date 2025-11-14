@@ -17,7 +17,7 @@ export default function Herosection(){
                             </div>
                             <p>This Background is My Only Btw.</p>
                         </div>
-                        <Button className="bg-neutral-800 border border-neutral-400"><CircleArrowOutUpRight/></Button>
+                        <Button className="bg-neutral-400 border size-8 hover:bg-neutral-800 border-neutral-600"><CircleArrowOutUpRight/></Button>
                     </div>
                 </div>
                 <div className="image2 grid lg:grid-rows-2 max-lg:grid-cols-2 gap-2">
