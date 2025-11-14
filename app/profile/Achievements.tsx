@@ -16,7 +16,7 @@ export default function AchievementsCard(){
                 {items.map((i)=> (
                     <Reorder.Item value={i} key={i.title} className="grid grid-cols-[auto_1fr_auto] hover:cursor-grab bg-card text-card-foreground transition-colors ease-in-out duration-200 place-items-center rounded-md border inset-shadow-sm gap-4 p-3">
                         <div className="relative size-12 rounded-md">
-                            <Image src={i.imageUrl} fill alt="" className="p-1 rounded-md"/>
+                            <Image sizes="100%" src={i.imageUrl} fill alt="" className="p-1 rounded-md"/>
                         </div>
                         <div className="flex flex-col gap-2 place-self-start">
                             <p className="font-bold text-sm">{i.title}</p>

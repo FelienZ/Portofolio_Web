@@ -12,7 +12,7 @@ export default function StackCard(){
                     <motion.div className="flex w-full justify-evenly items-center" animate={{x:['100%', '-100%']}} transition={{duration: 20, ease: 'linear', repeat: Infinity, repeatType: 'reverse'}}>
                         {ToolsData.map((i, idx) => idx < 7 ? (
                             <div key={idx} className="relative stack-marquee size-10">
-                                <Image loading="lazy" onLoad={()=>setLoaded(true)} src={i.url} alt="" className={`p-1 transition-opacity duration-200 ${loaded? 'opacity-100' : 'opacity-0'}`} fill/>
+                                <Image sizes="100%" loading="lazy" onLoad={()=>setLoaded(true)} src={i.url} alt="" className={`p-1 transition-opacity duration-200 ${loaded? 'opacity-100' : 'opacity-0'}`} fill/>
                             </div>
                         ): '')}
                     </motion.div>
@@ -21,7 +21,7 @@ export default function StackCard(){
                     <motion.div className="flex w-full justify-evenly items-center" animate={{x:['-100%', '100%']}} transition={{duration: 20, ease: 'linear', repeat: Infinity, repeatType: 'reverse'}}>
                         {ToolsData.map((i, idx) => idx >= 7 ? (
                             <div key={idx} className="relative stack-marquee size-10">
-                                <Image loading="lazy" onLoad={()=>setLoaded(true)} src={i.url} alt="" className={`p-1 transition-opacity duration-200 ${loaded? 'opacity-100' : 'opacity-0'}`} fill/>
+                                <Image sizes="100%" loading="lazy" onLoad={()=>setLoaded(true)} src={i.url} alt="" className={`p-1 transition-opacity duration-200 ${loaded? 'opacity-100' : 'opacity-0'}`} fill/>
                             </div>
                         ): '')}
                     </motion.div>
