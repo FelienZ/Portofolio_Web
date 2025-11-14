@@ -6,9 +6,9 @@ import { useState } from "react";
 export default function StackCard(){
     const [loaded, setLoaded] = useState(false);
     return(
-        <section className="flex flex-col gap-3 bg-white rounded-md drop-shadow-sm p-4">
+        <section className="flex flex-col gap-3 bg-card text-card-foreground transition-colors ease-in-out duration-200 rounded-md drop-shadow-sm p-4">
             <p className="font-bold flex items-center gap-3"><Layers/> Dev&apos;s Tools (Technologiaa)</p>
-                <div className="inset-shadow-sm bg-neutral-100 rounded-md p-1 relative overflow-hidden">
+                <div className="inset-shadow-sm bg-card text-card-foreground transition-colors ease-in-out duration-200 border rounded-md p-1 relative overflow-hidden">
                     <motion.div className="flex w-full justify-evenly items-center" animate={{x:['100%', '-100%']}} transition={{duration: 20, ease: 'linear', repeat: Infinity, repeatType: 'reverse'}}>
                         {ToolsData.map((i, idx) => idx < 7 ? (
                             <div key={idx} className="relative stack-marquee size-10">
@@ -17,7 +17,7 @@ export default function StackCard(){
                         ): '')}
                     </motion.div>
                 </div>
-                <div className="inset-shadow-sm bg-neutral-100 rounded-md p-1 relative overflow-hidden">
+                <div className="inset-shadow-sm bg-card text-card-foreground transition-colors ease-in-out duration-200 border rounded-md p-1 relative overflow-hidden">
                     <motion.div className="flex w-full justify-evenly items-center" animate={{x:['-100%', '100%']}} transition={{duration: 20, ease: 'linear', repeat: Infinity, repeatType: 'reverse'}}>
                         {ToolsData.map((i, idx) => idx >= 7 ? (
                             <div key={idx} className="relative stack-marquee size-10">

@@ -2,7 +2,7 @@ import { User } from "lucide-react";
 
 export default function About(){
     return(
-        <section className="flex flex-col gap-3 bg-white rounded-md drop-shadow-sm py-5 px-8">
+        <section className="flex flex-col gap-3 bg-card text-card-foreground transition-colors ease-in-out duration-200 rounded-md drop-shadow-sm py-5 px-8">
             <p className="font-bold flex items-center gap-2"><User/> About Me</p>
             <div className="flex flex-col gap-3">
                 <p>Hello! I am Rajab, an Informatics Student and Currently Passionate About Exploring Web Development.</p>

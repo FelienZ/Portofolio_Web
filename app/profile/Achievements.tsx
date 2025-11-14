@@ -10,11 +10,11 @@ import { useState } from "react";
 export default function AchievementsCard(){
     const [items, setItem] = useState(AchievementData)
     return(
-        <section className="flex flex-col gap-3 bg-white rounded-md drop-shadow-sm p-4">
+        <section className="flex flex-col gap-3 bg-card text-card-foreground transition-colors ease-in-out duration-200 rounded-md drop-shadow-sm p-4">
             <p className="font-bold flex items-center gap-3"><Trophy/> My Achievements</p>
             <Reorder.Group axis="y" values={items} onReorder={setItem} className="flex flex-col gap-5 h-[59vh] overflow-y-scroll">
                 {items.map((i)=> (
-                    <Reorder.Item value={i} key={i.title} className="grid grid-cols-[auto_1fr_auto] hover:cursor-grab bg-neutral-100 place-items-center rounded-md inset-shadow-sm gap-4 p-3">
+                    <Reorder.Item value={i} key={i.title} className="grid grid-cols-[auto_1fr_auto] hover:cursor-grab bg-card text-card-foreground transition-colors ease-in-out duration-200 place-items-center rounded-md border inset-shadow-sm gap-4 p-3">
                         <div className="relative size-12 rounded-md">
                             <Image src={i.imageUrl} fill alt="" className="p-1 rounded-md"/>
                         </div>
