@@ -24,10 +24,52 @@ export const poppins = Poppins({
   subsets: ['latin'],
   weight: "200"
 })
-export const metadata: Metadata = {
-  title: "Portofolio Web",
-  description: "My Nextjs Porto Web",
+
+export const metadata = {
+  metadataBase: new URL("https://www.felienz.my.id/"),
+  title: {
+    default: "Muhammad Rajab Fadhly- Portofolio Website",
+    template: "%s | Rajab"
+  },
+  description: "My Portofolio Website with NextJs - Muhammad Rajab.",
+  
+  keywords: [
+    "Muhammad Rajab",
+    "Rajab",
+    "Rajab Fadhly",
+    "m. rajab fadhly",
+    "m. rajab",
+    "felienz",
+    "FelienZ",
+    "FelienZ Portfolio",
+  ],
+
+  openGraph: {
+    type: "website",
+    url: "https://www.felienz.my.id/",
+    title: "Muhammad Rajab — Portofolio Website",
+    description: "My Portofolio Website - Muhammad Rajab.",
+    images: [
+      {
+        url: "/images/Kuchi-store.png",
+        alt: "FelienZ Portfolio Website",
+      }
+    ]
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Muhammad Rajab — Portofolio Website",
+    description: "My Portofolio Website - Muhammad Rajab.",
+    images: ["/images/Kuchi-store.png"]
+  },
+
+  alternates: {
+    canonical: "https://www.felienz.my.id/",
+  },
 };
+
+
 
 export default function RootLayout({
   children,
