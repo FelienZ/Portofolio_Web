@@ -28,10 +28,10 @@ export const poppins = Poppins({
 export const metadata = {
   metadataBase: new URL("https://www.felienz.my.id/"),
   title: {
-    default: "Muhammad Rajab Fadhly- Portofolio Website",
+    default: "Muhammad Rajab Fadhly - Portofolio Website | Web Developer",
     template: "%s | Rajab"
   },
-  description: "My Portofolio Website with NextJs - Muhammad Rajab.",
+  description: "Muhammad Rajab Fadhly | Seorang Mahasiswa yang sedang berfokus pada pengembangan web dengan stack utama React, dan Node.js. Cek profil saya di sini.",
   
   keywords: [
     "Muhammad Rajab",
