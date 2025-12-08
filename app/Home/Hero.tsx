@@ -13,7 +13,7 @@ export default function Herosection(){
                     <div className="text-neutral-950 flex w-full items-center justify-between relative self-end z-20">
                         <div className="flex flex-col gap-3">
                             <div className="typewriter">
-                                <h1 className={`font-bold text-xl`}>{"Hello World! I am Rajab".toUpperCase()}</h1>
+                                <h3 className={`font-bold text-xl`}>{"Hello World! I am Rajab".toUpperCase()}</h3>
                             </div>
                             <p>This Background is My Only Btw.</p>
                         </div>

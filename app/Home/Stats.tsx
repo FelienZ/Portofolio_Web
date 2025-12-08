@@ -16,7 +16,7 @@ export default function Statsection(){
                 <Reorder.Item value={i} key={i.title} className="flex flex-col justify-between h-[15vh] border p-3 bg-card text-card-foreground ease-in-out hover:cursor-grab hover:bg-neutral-700 hover:text-white transition-colors duration-200 rounded-md drop-shadow-sm">
                     <div className="flex items-center gap-3">
                         {i.icon}
-                        <p className="font-bold">{i.title}</p>
+                        <h3 className="font-bold">{i.title}</h3>
                     </div>
                     <div className="flex items-center justify-between w-full">
                         <p>{i.description}</p>

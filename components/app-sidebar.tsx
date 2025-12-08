@@ -26,7 +26,7 @@ export function AppSidebar() {
     <Sidebar>
       <SidebarContent>
         <SidebarGroup className="h-full">
-          <SidebarGroupLabel className="font-bold text-sm"><h1>{`Muhammad Rajab Portofolio`.toUpperCase()}</h1></SidebarGroupLabel>
+          <SidebarGroupLabel className="font-bold text-sm"><h1>{`Muhammad Rajab Fadhly`.toUpperCase()}</h1></SidebarGroupLabel>
           <SidebarGroupContent className="h-full">
             <SidebarMenu className="mt-5 gap-4 divide-y">
                 {groupItems.map((item) => (

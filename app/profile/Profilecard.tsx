@@ -17,7 +17,7 @@ export default function ProfileCard(){
                         <Image onClick={()=>toast.warning("Ini My Gweh Woi")} sizes="100%" src="/images/takina3.jpg" width={200} height={200} className="object-cover hover:cursor-pointer relative max-sm:absolute sm:left-6 bottom-30 max-sm:bottom-45 p-3 bg-card text-card-foreground transition-colors ease-in-out duration-200 rounded-full" alt="waifu-pic-3"/>
                         <div className="flex flex-col h-full justify-evenly max-sm:pt-20 p-6 gap-4">
                             <div className="flex flex-col gap-2">
-                                <h1 className="font-bold md:text-xl max-md:text-center tracking-[3px]">M. Rajab Fadhly Hartawibawa</h1>
+                                <h2 className="font-bold md:text-xl max-md:text-center tracking-[3px]">M. Rajab Fadhly Hartawibawa</h2>
                                 <div className="flex max-md:grid grid-cols-2 place-items-center sm:items-center gap-1">
                                     <Badge className="bg-neutral-500 text-white"><CodeXml/>Web Developer</Badge>
                                     <Badge className="bg-emerald-500 text-white"><GraduationCap/>Undergraduate Student</Badge>

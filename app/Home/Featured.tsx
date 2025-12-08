@@ -19,7 +19,7 @@ export default function Featuredsection(){
                     <div key={idx} onClick={()=>handleNavigateExternal(i.url)} className="h-[25vh] flex hover:cursor-pointer relative p-3 brightness-100 bg-white hover:brightness-75 transition-all duration-300 rounded-md drop-shadow-sm">
                         <Image sizes="100%" src={i.imgUrl} fill  className="object-cover rounded-sm" alt={`project-${idx}`}/>
                         <div className="flex w-full items-center justify-between self-end z-20">
-                            <p className="font-bold text-neutral-100 bg-neutral-500 px-2 rounded-full">{i.title}</p>
+                            <h3 className="font-bold text-neutral-100 bg-neutral-500 px-2 rounded-full">{i.title}</h3>
                             {i.icon}
                         </div>
                     </div>
