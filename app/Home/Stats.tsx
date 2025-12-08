@@ -10,7 +10,7 @@ export default function Statsection(){
     const router = useRouter()
     return (
         <section className="flex flex-col gap-3 bg-card text-card-foreground transition-colors ease-in-out duration-200 rounded-md drop-shadow-sm p-4">
-            <p className="font-bold flex items-center gap-2"><ChartLine/> My Stats</p>
+            <h2 className="font-bold flex items-center gap-2"><ChartLine/> My Stats</h2>
             <Reorder.Group axis="x" values={items} onReorder={setItem} className="sm:grid hidden sm:grid-cols-2 lg:grid-cols-4 gap-3">
               {items.map(i=> 
                 <Reorder.Item value={i} key={i.title} className="flex flex-col justify-between h-[15vh] border p-3 bg-card text-card-foreground ease-in-out hover:cursor-grab hover:bg-neutral-700 hover:text-white transition-colors duration-200 rounded-md drop-shadow-sm">
