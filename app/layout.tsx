@@ -87,9 +87,9 @@ export default function RootLayout({
         <ThemeProvider>
           <SidebarProvider>
             <AppSidebar />
-            <main className="overflow-x-scroll grid w-screen place-content-center scrollbar-hide">
+            <main className="overflow-x-scroll grid w-screen scrollbar-hide">
               <SidebarTrigger />
-              <div className="min-h-screen md:w-[95vw] mx-2.5 sm:mx-5 my-5">
+              <div className="min-h-screen md:w-[95vw] w-screen mx-2.5 sm:mx-5 my-5">
                 {children}
               </div>
             </main>
