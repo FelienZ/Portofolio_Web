@@ -9,6 +9,13 @@ export const AchievementData: AchievementItems[] = [
         issuedDate: 'Sep 19, 2025'
     },
     {
+        title: 'Menjadi Back-End Developer Expert dengan JavaScript',
+        url: 'https://www.dicoding.com/certificates/GRX5J1OEKX0M',
+        imageUrl: '/images/achievement/dicoding.png',
+        description: 'Dicoding Indonesia',
+        issuedDate: 'Dec 19, 2025'
+    },
+    {
         title: 'Belajar Fundamental Back-End dengan JavaScript',
         url: 'https://www.dicoding.com/certificates/MEPJ2LG1WP3V',
         imageUrl: '/images/achievement/dicoding.png',

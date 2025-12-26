@@ -20,6 +20,12 @@ export const projectData: ProjectInterface[] = [
         visibility: 'private'
     },
     {
+        url: 'https://github.com/FelienZ/elPrediksi',
+        title: 'ElPrediksi',
+        createdAt: 'Nov 28, 2025',
+        visibility: 'public'
+    },
+    {
         url: 'https://felienz-resto-app.onrender.com/',
         title: 'Restaurant Booking Web',
         createdAt: 'Jul 2, 2025',
