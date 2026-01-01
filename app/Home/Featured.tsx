@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Featuredsection() {
   return (
     <section
-      className={`flex flex-col gap-3 bg-card text-card-foreground transition-colors ease-in-out duration-200 rounded-md drop-shadow-sm p-4`}
+      className={`flex flex-col max-md:max-h-[50vh] gap-3 bg-card text-card-foreground transition-colors ease-in-out duration-200 rounded-md drop-shadow-sm p-4`}
     >
       <h2 className="font-bold flex items-center gap-2">
         <BookmarkCheck /> Highlight Project
@@ -20,7 +20,7 @@ export default function Featuredsection() {
       dark:[&::-webkit-scrollbar-track]:bg-neutral-700
       dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500"
       >
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 md:max-h-[30vh] min-w-screen p-3">
+        <div className="grid sm:grid-cols-2 2xl:grid-cols-3 gap-8 md:max-h-[30vh] min-w-screen p-3">
           {featuredData.map((i, idx) => (
             <div
               key={idx}
