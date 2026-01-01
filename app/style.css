@@ -10,6 +10,9 @@
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+.scrollbar-x-hide::-webkit-scrollbar:horizontal {
+  display: none;
+}
 @keyframes typing {
   from { width: 0 }
   to { width: 105% }

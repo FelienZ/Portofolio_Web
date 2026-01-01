@@ -2,6 +2,12 @@ import { ProjectInterface } from "../types/data/projectItem";
 
 export const projectData: ProjectInterface[] = [
     {
+        url: 'https://kuchi-store-v2.vercel.app',
+        title: 'E-commerce Gadget Web v2',
+        createdAt: 'Dec 4, 2025',
+        visibility: 'private'
+    },
+    {
         url: 'https://kuchi-store.vercel.app/',
         title: 'E-commerce Gadget Web',
         createdAt: 'Aug 6, 2025',
@@ -35,6 +41,24 @@ export const projectData: ProjectInterface[] = [
         url: 'https://github.com/FelienZ/LokaStore',
         title: 'Lokastore',
         createdAt: 'Jul 21, 2025',
+        visibility: 'public'
+    },
+        {
+        url: 'https://github.com/FelienZ/Kuchi_Ticket',
+        title: 'Kuchi Ticketing Service',
+        createdAt: 'Dec 27, 2025',
+        visibility: 'public'
+    },
+        {
+        url: 'https://github.com/FelienZ/ForumAPI_submission',
+        title: 'Forum API Service',
+        createdAt: 'Nov 21, 2025',
+        visibility: 'public'
+    },
+        {
+        url: 'https://github.com/FelienZ/auth_api',
+        title: 'Auth API Service',
+        createdAt: 'Nov 26, 2025',
         visibility: 'public'
     },
     {

@@ -22,7 +22,13 @@ export default function AchievementsCard() {
         axis="y"
         values={items}
         onReorder={setItem}
-        className="flex flex-col gap-5 h-[59vh] overflow-y-scroll p-3"
+        className="flex flex-col gap-5 h-[58.5vh] overflow-y-scroll p-3 scrollbar-x-hide [&::-webkit-scrollbar]:w-1.5
+      [&::-webkit-scrollbar-track]:rounded-full
+      [&::-webkit-scrollbar-track]:bg-gray-100
+      [&::-webkit-scrollbar-thumb]:rounded-full
+      [&::-webkit-scrollbar-thumb]:bg-gray-300
+      dark:[&::-webkit-scrollbar-track]:bg-neutral-700
+      dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500"
       >
         {items.map((i, idx) => (
           <Reorder.Item

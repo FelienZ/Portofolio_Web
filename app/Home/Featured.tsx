@@ -11,8 +11,16 @@ export default function Featuredsection() {
       <h2 className="font-bold flex items-center gap-2">
         <BookmarkCheck /> Highlight Project
       </h2>
-      <div className="flex overflow-x-auto scrollbar-hide">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 min-w-screen p-3">
+      <div
+        className="flex overflow-y-auto scrollbar-x-hide px-1 [&::-webkit-scrollbar]:w-1.5
+      [&::-webkit-scrollbar-track]:rounded-full
+      [&::-webkit-scrollbar-track]:bg-gray-100
+      [&::-webkit-scrollbar-thumb]:rounded-full
+      [&::-webkit-scrollbar-thumb]:bg-gray-300
+      dark:[&::-webkit-scrollbar-track]:bg-neutral-700
+      dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500"
+      >
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 md:max-h-[30vh] min-w-screen p-3">
           {featuredData.map((i, idx) => (
             <div
               key={idx}
