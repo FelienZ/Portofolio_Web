@@ -10,7 +10,6 @@ export default function Statsection() {
   const [items, setItem] = useState(statsData);
   const width = useWidth();
   const router = useRouter();
-  const isDesktop = width >= 1024;
   return (
     <section className="flex flex-col gap-3 bg-card text-card-foreground transition-colors ease-in-out duration-200 rounded-md drop-shadow-sm p-4">
       <h2 className="font-bold flex items-center gap-2">
@@ -19,8 +18,8 @@ export default function Statsection() {
       <Reorder.Group
         values={items}
         onReorder={setItem}
-        axis={isDesktop ? "x" : "y"}
-        className={`grid gap-3 ${isDesktop ? "grid-cols-4" : "grid-cols-2"}`}
+        axis={width >= 1024 ? "x" : "y"}
+        className={`grid gap-3 grid-cols-2 lg:grid-cols-4`}
       >
         {items.map((i) => (
           <Reorder.Item
