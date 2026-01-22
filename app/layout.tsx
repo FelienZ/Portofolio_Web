@@ -51,6 +51,14 @@ export const metadata = {
     "FelienZ Portfolio",
   ],
 
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/icon.png", sizes: "32x32", type: "image/png" },
+      { url: "/icon-highres.png", sizes: "192x192", type: "image/png" },
+    ],
+  },
+
   openGraph: {
     type: "website",
     url: "https://www.felienz.my.id/",
