@@ -6,6 +6,7 @@ import { featuredData } from "./featured";
 
 export const statsData: StatsItem[] = [
   {
+    id: "item-1",
     title: "6th Grade",
     description: "Undergraduate Student",
     icon: (
@@ -13,6 +14,7 @@ export const statsData: StatsItem[] = [
     ),
   },
   {
+    id: "item-2",
     title: AchievementData.length.toString(),
     description: "Certifications",
     icon: (
@@ -20,6 +22,7 @@ export const statsData: StatsItem[] = [
     ),
   },
   {
+    id: "item-3",
     title: featuredData.length.toString(),
     description: "Highlight Projects",
     icon: (
@@ -27,6 +30,7 @@ export const statsData: StatsItem[] = [
     ),
   },
   {
+    id: "item-4",
     title: ToolsData.length.toString(),
     description: "Tech Stack",
     icon: <Cpu className="bg-purple-800 size-8 rounded-md p-1 text-white" />,
