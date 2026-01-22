@@ -10,11 +10,9 @@ import { Calendar, SquareArrowOutUpRight, Trophy } from "lucide-react";
 import Image from "next/image";
 import { Reorder } from "motion/react";
 import { useState } from "react";
-import useWidth from "@/hooks/useWidth";
 
 export default function AchievementsCard() {
   const [items, setItem] = useState(AchievementData);
-  const width = useWidth();
   return (
     <section className="bg-card text-card-foreground transition-colors ease-in-out duration-200 rounded-md drop-shadow-sm p-4">
       <div className="flex flex-col gap-3 justify-evenly h-full">
