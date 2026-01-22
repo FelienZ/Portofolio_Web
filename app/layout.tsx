@@ -85,7 +85,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${outfit.className} antialiased overflow-x-hidden`}>
         <ThemeProvider>
-          <SidebarProvider>
+          <SidebarProvider defaultOpen={false}>
             <AppSidebar />
             <main className="overflow-x-scroll grid w-screen scrollbar-hide">
               <SidebarTrigger />
