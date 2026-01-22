@@ -53,17 +53,17 @@ export default function ProfileCard() {
                   <CodeXml />
                   Web Developer
                 </Badge>
+                <Badge className="bg-yellow-500 text-white">
+                  <Settings />
+                  Backend Developer
+                </Badge>
                 <Badge className="bg-emerald-500 text-white">
                   <GraduationCap />
-                  Undergraduate Student
+                  Undergraduate
                 </Badge>
                 <Badge className="bg-blue-500 text-white">
                   <Laptop />
                   Frontend Developer
-                </Badge>
-                <Badge className="bg-yellow-500 text-white">
-                  <Settings />
-                  Backend Developer
                 </Badge>
               </div>
             </div>
@@ -74,7 +74,7 @@ export default function ProfileCard() {
                     <Button
                       onClick={() =>
                         handleNavigateExternal(
-                          "https://www.instagram.com/rajabfadh/"
+                          "https://www.instagram.com/rajabfadh/",
                         )
                       }
                       variant={"outline"}
@@ -108,7 +108,7 @@ export default function ProfileCard() {
                     <Button
                       onClick={() =>
                         handleNavigateExternal(
-                          "https://www.linkedin.com/in/muhammad-rajab-fadhly/"
+                          "https://www.linkedin.com/in/muhammad-rajab-fadhly/",
                         )
                       }
                       variant={"outline"}

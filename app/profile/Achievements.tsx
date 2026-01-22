@@ -10,9 +10,11 @@ import { Calendar, SquareArrowOutUpRight, Trophy } from "lucide-react";
 import Image from "next/image";
 import { Reorder } from "motion/react";
 import { useState } from "react";
+import useWidth from "@/hooks/useWidth";
 
 export default function AchievementsCard() {
   const [items, setItem] = useState(AchievementData);
+  const width = useWidth();
   return (
     <section className="bg-card text-card-foreground transition-colors ease-in-out duration-200 rounded-md drop-shadow-sm p-4">
       <div className="flex flex-col gap-3 justify-evenly h-full">
@@ -20,9 +22,9 @@ export default function AchievementsCard() {
           <Trophy /> My Achievements
         </h2>
         <Reorder.Group
-          axis="y"
           values={items}
           onReorder={setItem}
+          axis="y"
           className="flex flex-col h-[70vh] gap-5 overflow-y-scroll p-3 scrollbar-x-hide [&::-webkit-scrollbar]:w-1.5
       [&::-webkit-scrollbar-track]:rounded-full
       [&::-webkit-scrollbar-track]:bg-gray-100
