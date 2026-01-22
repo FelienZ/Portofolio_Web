@@ -8,7 +8,7 @@ export default function Githubsection() {
         <Github className="bg-black text-white rounded-full size-8 p-1.5" />
         <h2>My Github Contributions</h2>
       </div>
-      <div className="h-[28vh] flex items-center justify-center">
+      <div className="h-[28vh] flex my-2 items-center justify-center">
         <Githubcontributions />
       </div>
     </section>

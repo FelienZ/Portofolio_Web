@@ -1,7 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { projectData } from "@/utils/data/project";
 import handleNavigateExternal from "@/utils/navigateExternal";
-import { Book, FolderOpen } from "lucide-react";
+import { Book, CalendarFold, FolderOpen } from "lucide-react";
 
 export default function MyProjects() {
   return (
@@ -31,7 +31,10 @@ export default function MyProjects() {
                   {i.visibility}
                 </Badge>
               </div>
-              <p>{i.createdAt}</p>
+              <div className="flex items-center text-sm gap-3">
+                <CalendarFold className="size-4" />
+                <p>{i.createdAt}</p>
+              </div>
             </div>
           </div>
         ))}
