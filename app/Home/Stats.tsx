@@ -18,8 +18,8 @@ export default function Statsection() {
       <Reorder.Group
         values={items}
         onReorder={setItem}
-        axis={width >= 1024 ? "x" : "y"}
-        className={`grid gap-3 grid-cols-2 lg:grid-cols-4`}
+        axis={width > 1024 ? "x" : "y"}
+        className={`grid gap-3 sm:grid-cols-2 lg:grid-cols-4`}
       >
         {items.map((i) => (
           <Reorder.Item

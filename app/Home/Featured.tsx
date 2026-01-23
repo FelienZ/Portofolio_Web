@@ -1,4 +1,3 @@
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { featuredData } from "@/utils/data/featured";
 import handleNavigateExternal from "@/utils/navigateExternal";
@@ -24,14 +23,14 @@ export default function Featuredsection() {
       >
         {featuredData.map((i, idx) => (
           <div key={idx} className="w-full grid">
-            <div className="flex flex-col gap-3 border rounded-sm h-[30vh] max-md:w-[50vw] w-[25vw] 2xl:w-[20vw] p-2 drop-shadow-sm bg-card">
+            <div className="flex flex-col gap-3 border rounded-sm max-sm:h-[26vh] h-[30vh] max-md:w-[50vw] w-[30vw] xl:w-[20vw] p-2 drop-shadow-sm bg-card">
               <Image
                 sizes="100vw"
                 width={0}
                 height={0}
                 src={i.imgUrl}
                 alt={`featured-${idx}`}
-                className="rounded-sm w-full h-[18vh] border"
+                className="rounded-sm w-full max-sm:h-[15vh] h-[18vh] border"
               />
               <div className="flex flex-col px-2 gap-2">
                 <h3 className="text-sm font-semibold">{i.title}</h3>
